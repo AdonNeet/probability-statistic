@@ -38,8 +38,8 @@ Mean = 3970/100 = 39.7
 
 | Math Operation | Formula | Calculation Steps |  
 | :------------: | :-----: | :---------------: |  
-| $$M_2$$ | $$\frac{1}{100}\times\sum F(x-\bar{x})^2$$ | $$\begin{align*} \frac{1}{100}\times (25296) \\  252.96 \end{align*}$$ |  
-| $$M_3$$ | $$\frac{1}{100}\times\sum F(x-\bar{x})^3$$ |$$\begin{align*} \frac{1}{100}\times (-50678.4) \\  -506.784 \end{align*}$$ |  
-| $$S$$ | $$\sqrt(M_2)$$ |$$\begin{align*} \sqrt(252.96) \\  15.90471628 \end{align*}$$ |  
-| $$S^3$$ | $$(\sqrt(M_2))^3$$ |$$\begin{align*} (\sqrt(252.96))^3 \\  4023.257031 \end{align*}$$ |  
-| $$\alpha_3$$ | $$\frac{M_3}{S^3}$$ |$$\begin{align*} \frac{-506.784}{4023.257031}  \\  -0.1259636151 \end{align*}$$ |  
+| $$M_2$$ | $$\frac{1}{100}\times\sum F(x-\bar{x})^2$$ | $$ \frac{1}{100}\times (25296) \\  252.96 $$ |  
+| $$M_3$$ | $$\frac{1}{100}\times\sum F(x-\bar{x})^3$$ |$$ \frac{1}{100}\times (-50678.4) \\  -506.784 $$ |  
+| $$S$$ | $$\sqrt(M_2)$$ |$$ \sqrt(252.96) \\  15.90471628 $$ |  
+| $$S^3$$ | $$(\sqrt(M_2))^3$$ |$$ (\sqrt(252.96))^3 \\  4023.257031 $$ |  
+| $$\alpha_3$$ | $$\frac{M_3}{S^3}$$ |$$ \frac{-506.784}{4023.257031}  \\  -0.1259636151 $$ |  
