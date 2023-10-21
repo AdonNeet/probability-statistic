@@ -99,11 +99,11 @@ void getSkew(long double sumTwo, long double sumThree){
     cout << "<h2>Skewness</h2>  \n\n" 
          << "| Math Operation | Formula | Calculation Steps |  \n"
          << "| :------------: | :-----: | :---------------: |  \n";
-    cout << "| $$M_2$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^2$$ | $$ \\frac{1}{100}\\times (" << sumTwo << ") \\\\  " << sumTwo/100 << " $$ |  \n";
-    cout << "| $$M_3$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^3$$ |$$ \\frac{1}{100}\\times (" << sumThree << ") \\\\  " << sumThree/100 << " $$ |  \n";
-    cout << "| $$S$$ | $$\\sqrt(M_2)$$ |$$ \\sqrt(" << sumTwo/100 << ") \\\\  "<< setprecision(10) << sqrt(sumTwo/100) << " $$ |  \n";
-    cout << "| $$S^3$$ | $$(\\sqrt(M_2))^3$$ |$$ (\\sqrt(" << sumTwo/100 << "))^3 \\\\  " << setprecision(10) << pow(sqrt(sumTwo/100), 3) << " $$ |  \n";
-    cout << "| $$\\alpha_3$$ | $$\\frac{M_3}{S^3}$$ |$$ \\frac{" << sumThree/100  <<"}{"<< pow(sqrt(sumTwo/100), 3) <<"}  \\\\  " << (sumThree/100)/(pow(sqrt(sumTwo/100), 3)) << " $$ |  \n";
+    cout << "| $$M_2$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^2$$ | $$\\frac{1}{100}\\times (" << sumTwo << ")\\\\" << sumTwo/100 << "$$ |  \n";
+    cout << "| $$M_3$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^3$$ |$$\\frac{1}{100}\\times (" << sumThree << ")\\\\" << sumThree/100 << "$$ |  \n";
+    cout << "| $$S$$ | $$\\sqrt(M_2)$$ |$$\\sqrt(" << sumTwo/100 << ") \\\\  "<< setprecision(10) << sqrt(sumTwo/100) << "$$ |  \n";
+    cout << "| $$S^3$$ | $$(\\sqrt(M_2))^3$$ | $$(\\sqrt(" << sumTwo/100 << "))^3 \\\\" << setprecision(10) << pow(sqrt(sumTwo/100), 3) << "$$ |  \n";
+    cout << "| $$\\alpha_3$$ | $$\\frac{M_3}{S^3}$$ | $$\\frac{" << sumThree/100 <<"}{"<< pow(sqrt(sumTwo/100), 3) <<"}\\\\" << (sumThree/100)/(pow(sqrt(sumTwo/100), 3)) << "$$ |  \n";
 }
 
 int main() 
@@ -153,7 +153,7 @@ int main()
         temp[1] = temp[0];
     }
 
-    cout << "The source data:  \n";
+    cout << "<h1>Skewness And Kurtosis Momen Formula</h1>  \n\n";
     dataTable(rdA, rdB, freq);
 
     int F = 0;
