@@ -95,9 +95,16 @@ tuple<long double, long double, long double, long double, long double>  coreTabl
     return recurCore(freq, xBar, abst, pwTwo, pwThree, pwFour, rate, 0); 
 }
 
-// void getSkew(long double sumTwo, long double sumThree){
-//     cout<< "Skewness  \n" << "| Math Operation | Calculation Steps |  \n";
-// }
+void getSkew(long double sumTwo, long double sumThree){
+    cout << "<h2>Skewness</h2>  \n\n" 
+         << "| Math Operation | Formula | Calculation Steps |  \n"
+         << "| :------------: | :-----: | :---------------: |  \n";
+    cout << "| $$M_2$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^2$$ | $$\\begin{align*} \\frac{1}{100}\\times (" << sumTwo << ") \\\\  " << sumTwo/100 << " \\end{align*}$$ |  \n";
+    cout << "| $$M_3$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^3$$ |$$\\begin{align*} \\frac{1}{100}\\times (" << sumThree << ") \\\\  " << sumThree/100 << " \\end{align*}$$ |  \n";
+    cout << "| $$S$$ | $$\\sqrt(M_2)$$ |$$\\begin{align*} \\sqrt(" << sumTwo/100 << ") \\\\  "<< setprecision(10) << sqrt(sumTwo/100) << " \\end{align*}$$ |  \n";
+    cout << "| $$S^3$$ | $$(\\sqrt(M_2))^3$$ |$$\\begin{align*} (\\sqrt(" << sumTwo/100 << "))^3 \\\\  " << setprecision(10) << pow(sqrt(sumTwo/100), 3) << " \\end{align*}$$ |  \n";
+    cout << "| $$\\alpha_3$$ | $$\\frac{M_3}{S^3}$$ |$$\\begin{align*} \\frac{" << sumThree/100  <<"}{"<< pow(sqrt(sumTwo/100), 3) <<"}  \\\\  " << (sumThree/100)/(pow(sqrt(sumTwo/100), 3)) << " \\end{align*}$$ |  \n";
+}
 
 int main() 
 {
@@ -167,7 +174,8 @@ int main()
     }
 
     tie(sumBar, sumAbs, sumTwo, sumThree, sumFour) = coreTable(freq, xBar, abst, pwTwo, pwThree, pwFour, rate);
-    cout << "Check the return -> " << setprecision(10) << sumBar << " " << setprecision(10) << sumAbs << " " << setprecision(10) << sumTwo << " " << setprecision(10) << sumThree << " " << setprecision(10) << sumFour;
+    // cout << "Check the return -> " << setprecision(10) << sumBar << " " << setprecision(10) << sumAbs << " " << setprecision(10) << sumTwo << " " << setprecision(10) << sumThree << " " << setprecision(10) << sumFour << "  \n";
 
+    getSkew(sumTwo, sumThree);
     return 0;
 }
