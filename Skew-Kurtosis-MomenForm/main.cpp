@@ -99,11 +99,11 @@ void getSkew(long double sumTwo, long double sumThree){
     cout << "<h2>Skewness</h2>  \n\n" 
          << "| Math Operation | Formula | Calculation Steps |  \n"
          << "| :------------: | :-----: | :---------------: |  \n";
-    cout << "| $$M_2$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^2$$ | $$\\frac{1}{100}\\times (" << setprecision(10) << sumTwo << ") \\\\ " << setprecision(10) << sumTwo/100 << "$$ |  \n";
-    cout << "| $$M_3$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^3$$ |$$\\frac{1}{100}\\times (" << setprecision(10) << sumThree << ") \\\\ " << setprecision(10) << sumThree/100 << "$$ |  \n";
-    cout << "| $$S$$ | $$\\sqrt(M_2)$$ |$$\\sqrt(" << setprecision(10) << sumTwo/100 << ") \\\\  "<< setprecision(10) << sqrt(sumTwo/100) << "$$ |  \n";
-    cout << "| $$S^3$$ | $$(\\sqrt(M_2))^3$$ | $$(\\sqrt(" << setprecision(10) << sumTwo/100 << "))^3 \\\\ " << setprecision(10) << pow(sqrt(sumTwo/100), 3) << "$$ |  \n";
-    cout << "| $$\\alpha_3$$ | $$\\frac{M_3}{S^3}$$ | $$\\frac{" << setprecision(10) << sumThree/100 <<"}{" << setprecision(10) << pow(sqrt(sumTwo/100), 3) <<"} \\\\ " << setprecision(10) << (sumThree/100)/(pow(sqrt(sumTwo/100), 3)) << "$$ |  \n";
+    cout << "| $$M_2$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^2$$ | $$\\frac{1}{100}\\times (" << setprecision(10) << sumTwo << ") \\Rightarrow " << setprecision(10) << sumTwo/100 << "$$ |  \n";
+    cout << "| $$M_3$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^3$$ |$$\\frac{1}{100}\\times (" << setprecision(10) << sumThree << ") \\Rightarrow  " << setprecision(10) << sumThree/100 << "$$ |  \n";
+    cout << "| $$S$$ | $$\\sqrt(M_2)$$ |$$\\sqrt(" << setprecision(10) << sumTwo/100 << ") \\Rightarrow   "<< setprecision(10) << sqrt(sumTwo/100) << "$$ |  \n";
+    cout << "| $$S^3$$ | $$(\\sqrt(M_2))^3$$ | $$(\\sqrt(" << setprecision(10) << sumTwo/100 << "))^3 \\Rightarrow  " << setprecision(10) << pow(sqrt(sumTwo/100), 3) << "$$ |  \n";
+    cout << "| $$\\alpha_3$$ | $$\\frac{M_3}{S^3}$$ | $$\\frac{" << setprecision(10) << sumThree/100 <<"}{" << setprecision(10) << pow(sqrt(sumTwo/100), 3) <<"} \\Rightarrow  " << setprecision(10) << (sumThree/100)/(pow(sqrt(sumTwo/100), 3)) << "$$ |  \n";
 }
 
 int main() 
