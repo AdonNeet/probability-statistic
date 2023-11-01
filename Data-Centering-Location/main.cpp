@@ -64,7 +64,7 @@ void recurMeanMed(vector<int>& rdA, vector<int>& rdB, vector<long double>& med, 
             recurMeanMed(rdA, rdB, med, freq, F, tempe, pos+1);
     } else {
         
-        cout << "| $$\\sum total$$ | | | " << setprecision(10) << tempe << " |  \n\n";
+        cout << "| $$\\sum total$$ | | "<< F <<" | " << setprecision(10) << tempe << " |  \n\n";
         cout << "$$\\bar{X} = \\frac{\\sum{fX}}{\\sum{f}} = \\frac{" << setprecision(10) << tempe << "}{" << F << "} = " << setprecision(10) << tempe/static_cast<double>(F) <<"$$  \n\n";
     }
 }
@@ -88,7 +88,7 @@ void recurMeanU(vector<int>& rdA, vector<int>& rdB, vector<long double>& med, ve
             recurMeanU(rdA, rdB, med, freq, F, tempe, Xo, pos+1);
     } else {
         
-        cout << "| $$\\sum total$$ | | | | " << setprecision(10) << tempe << " |  \n\n";
+        cout << "| $$\\sum total$$ | | | "<< F <<" | " << setprecision(10) << tempe << " |  \n\n";
         cout << "$$\\bar{X} = X_0 + c(\\frac{\\sum{fU}}{\\sum{f}}) = "<< Xo << "+" << rdB[pos-1]-rdA[pos-1]+1 << " (\\frac{" << setprecision(10) << tempe << "}{" << F << "}) = " << setprecision(10) << Xo+(static_cast<long double>(rdB[pos-1]-rdA[pos-1]+1)*(tempe/static_cast<double>(F)))<<"$$  \n\n";
     }
 }
