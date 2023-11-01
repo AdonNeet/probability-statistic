@@ -44,3 +44,14 @@ Mean = 3970/100 = 39.7
 | $$S$$ | $$\sqrt(M_2)$$ |$$\sqrt(252.96) \Rightarrow   15.90471628$$ |  
 | $$S^3$$ | $$(\sqrt(M_2))^3$$ | $$(\sqrt(252.96))^3 \Rightarrow  4023.257031$$ |  
 | $$\alpha_3$$ | $$\frac{M_3}{S^3}$$ | $$\frac{-506.784}{4023.257031} \Rightarrow  -0.1259636151$$ |  
+
+<h2>Kurtosis</h2>  
+
+| Math Operation | Formula | Calculation Steps |  
+| :------------: | :-----: | :---------------: |  
+| $$M_2$$ | $$\frac{1}{100}\times\sum F(x-\bar{x})^2$$ | $$\frac{1}{100}\times (25296) \Rightarrow 252.96$$ |  
+| $$M_4$$ | $$\frac{1}{100}\times\sum F(x-\bar{x})^4$$ |$$\frac{1}{100}\times (14676971.52) \Rightarrow  146769.7152$$ |  
+| $$S$$ | $$\sqrt(M_2)$$ |$$\sqrt(252.96) \Rightarrow   15.90471628$$ |  
+| $$S^4$$ | $$(\sqrt(M_2))^3$$ | $$(\sqrt(252.96))^4 \Rightarrow  63988.7616$$ |  
+| $$\alpha_4$$ | $$\frac{M_3}{S^4}$$ | $$\frac{146769.7152}{63988.7616} \Rightarrow  2.29367957$$ |  
+
