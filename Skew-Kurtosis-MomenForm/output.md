@@ -45,7 +45,7 @@ Mean = 3970/100 = 39.7
 | $$S^3$$ | $$(\sqrt(M_2))^3$$ | $$(\sqrt(252.96))^3 \Rightarrow  4023.257031$$ |  
 | $$\alpha_3$$ | $$\frac{M_3}{S^3}$$ | $$\frac{-506.784}{4023.257031} \Rightarrow  -0.1259636151$$ |  
 
-<h2>Kurtosis</h2>  
+Conclusion -> Skew into left (Below 0)<h2>Kurtosis</h2>  
 
 | Math Operation | Formula | Calculation Steps |  
 | :------------: | :-----: | :---------------: |  
@@ -55,3 +55,4 @@ Mean = 3970/100 = 39.7
 | $$S^4$$ | $$(\sqrt(M_2))^3$$ | $$(\sqrt(252.96))^4 \Rightarrow  63988.7616$$ |  
 | $$\alpha_4$$ | $$\frac{M_3}{S^4}$$ | $$\frac{146769.7152}{63988.7616} \Rightarrow  2.29367957$$ |  
 
+Conclusion -> Platikurtis, flat form (Below 3)
