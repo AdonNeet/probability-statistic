@@ -122,6 +122,8 @@ void getMed(vector<int>& rdA, vector<int>& rdB, vector<int>& freq, int F, int te
     }     
 }
 
+// void getMod
+
 int main() {
     #ifndef input_data
     freopen("input.in", "r", stdin);
@@ -181,5 +183,7 @@ int main() {
 
     cout << "<h2>Median</h2>  \n\n";
     getMed(rdA, rdB, freq, F, 0, 0);
+
+    cout << "<h2>Modus</h2>  \n\n";
 
 }

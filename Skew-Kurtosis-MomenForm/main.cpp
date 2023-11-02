@@ -120,7 +120,7 @@ void getKurto(long double sumTwo, long double sumFour) {
     cout << "| $$M_2$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^2$$ | $$\\frac{1}{100}\\times (" << setprecision(10) << sumTwo << ") \\Rightarrow " << setprecision(10) << sumTwo/100 << "$$ |  \n";
     cout << "| $$M_4$$ | $$\\frac{1}{100}\\times\\sum F(x-\\bar{x})^4$$ |$$\\frac{1}{100}\\times (" << setprecision(10) << sumFour << ") \\Rightarrow  " << setprecision(10) << sumFour/100 << "$$ |  \n";
     cout << "| $$S$$ | $$\\sqrt(M_2)$$ |$$\\sqrt(" << setprecision(10) << sumTwo/100 << ") \\Rightarrow   "<< setprecision(10) << sqrt(sumTwo/100) << "$$ |  \n";
-    cout << "| $$S^4$$ | $$(\\sqrt(M_2))^3$$ | $$(\\sqrt(" << setprecision(10) << sumTwo/100 << "))^4 \\Rightarrow  " << setprecision(10) << pow(sqrt(sumTwo/100), 4) << "$$ |  \n";
+    cout << "| $$S^4$$ | $$(\\sqrt(M_2))^4$$ | $$(\\sqrt(" << setprecision(10) << sumTwo/100 << "))^4 \\Rightarrow  " << setprecision(10) << pow(sqrt(sumTwo/100), 4) << "$$ |  \n";
     cout << "| $$\\alpha_4$$ | $$\\frac{M_3}{S^4}$$ | $$\\frac{" << setprecision(10) << sumFour/100 <<"}{" << setprecision(10) << pow(sqrt(sumTwo/100), 4) <<"} \\Rightarrow  " << setprecision(10) << (sumFour/100)/(pow(sqrt(sumTwo/100), 4)) << "$$ |  \n\n";
     if((sumFour/100)/(pow(sqrt(sumTwo/100), 4)) < 3) {
         cout << "Conclusion -> Platikurtis, flat form (Below 3)";
